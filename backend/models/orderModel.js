@@ -18,6 +18,7 @@ const orderSchema = mongoose.Schema(
           required: true,
           ref: 'Product',
         },
+        downloadLink: { type: String, required: true },
       },
     ],
     shippingAddress: {

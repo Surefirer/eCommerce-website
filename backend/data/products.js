@@ -10,6 +10,8 @@ const products = [
     countInStock: 10,
     rating: 4.5,
     numReviews: 12,
+    downloadLink:
+      'https://images.unsplash.com/photo-1608135516706-9abbd8f272be?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max',
   },
   {
     name: 'iPhone 11 Pro 256GB Memory',
@@ -22,6 +24,8 @@ const products = [
     countInStock: 7,
     rating: 4.0,
     numReviews: 8,
+    downloadLink:
+      'https://images.unsplash.com/photo-1608635818536-f8cb56841739?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max',
   },
   {
     name: 'Cannon EOS 80D DSLR Camera',
@@ -34,6 +38,8 @@ const products = [
     countInStock: 5,
     rating: 3,
     numReviews: 12,
+    downloadLink:
+      'https://images.unsplash.com/photo-1609105719290-3c8abfef183f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max',
   },
   {
     name: 'Sony Playstation 4 Pro White Version',
@@ -46,6 +52,8 @@ const products = [
     countInStock: 11,
     rating: 5,
     numReviews: 12,
+    downloadLink:
+      'https://images.unsplash.com/photo-1608576156940-bc655fc87417?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max',
   },
   {
     name: 'Logitech G-Series Gaming Mouse',
@@ -58,6 +66,8 @@ const products = [
     countInStock: 7,
     rating: 3.5,
     numReviews: 10,
+    downloadLink:
+      'https://images.unsplash.com/photo-1609109515452-9cb3cdf596a4?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max',
   },
   {
     name: 'Amazon Echo Dot 3rd Generation',
@@ -70,6 +80,8 @@ const products = [
     countInStock: 0,
     rating: 4,
     numReviews: 12,
+    downloadLink:
+      'https://images.unsplash.com/photo-1608575894031-ef873b9435e0?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max',
   },
 ];
 
