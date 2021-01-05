@@ -5,10 +5,23 @@ import { useDispatch, useSelector } from 'react-redux';
 import Message from '../components/Message';
 import CheckoutSteps from '../components/CheckoutSteps';
 import { createOrder } from '../actions/orderActions';
+import { cartReset } from '../actions/cartActions';
+import { USER_DETAILS_RESET } from '../constants/userConstants';
+import { ORDER_CREATE_RESET } from '../constants/orderConstants';
 
 const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
+
+  if (!cart.shippingAddress.address) {
+    history.push('/shipping');
+  } else if (!cart.paymentMethod) {
+    history.push('/payment');
+  }
+
+  // if (!cart.paymentMethod) {
+  //   history.push('/payment');
+  // }
 
   // calculate prices
   const addDecimals = (num) => {
@@ -33,6 +46,9 @@ const PlaceOrderScreen = ({ history }) => {
   useEffect(() => {
     if (success) {
       history.push(`/order/${order._id}`);
+      dispatch({ type: USER_DETAILS_RESET });
+      dispatch({ type: ORDER_CREATE_RESET });
+      dispatch(cartReset());
     }
     // eslint-disable-next-line
   }, [history, success]);
@@ -136,9 +152,11 @@ const PlaceOrderScreen = ({ history }) => {
                 </Row>
               </ListGroup.Item>
 
-              <ListGroup.Item>
-                {error && <Message variant='danger'>{error}</Message>}
-              </ListGroup.Item>
+              {error && (
+                <ListGroup.Item>
+                  <Message variant='danger'>{error}</Message>
+                </ListGroup.Item>
+              )}
 
               <ListGroup.Item>
                 <Button

@@ -4,6 +4,7 @@ import {
   ORDER_CREATE_REQUEST,
   ORDER_CREATE_SUCCESS,
   ORDER_CREATE_FAIL,
+  ORDER_CREATE_RESET,
   ORDER_DETAILS_REQUEST,
   ORDER_DETAILS_SUCCESS,
   ORDER_DETAILS_FAIL,
@@ -23,7 +24,7 @@ import {
 
 export const createOrder = (order) => async (dispatch, getState) => {
   try {
-    localStorage.removeItem('cartItems');
+    //localStorage.removeItem('cartItems');
     dispatch({
       type: ORDER_CREATE_REQUEST,
     });
@@ -54,6 +55,12 @@ export const createOrder = (order) => async (dispatch, getState) => {
           : error.message,
     });
   }
+};
+
+export const createOrderReset = () => (dispatch) => {
+  dispatch({
+    type: ORDER_CREATE_RESET,
+  });
 };
 
 export const getOrderDetails = (id) => async (dispatch, getState) => {
