@@ -2,8 +2,10 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Navbar, Nav, Container, NavDropdown } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
 import { logout } from '../actions/userActions';
+import { useHistory } from 'react-router-dom';
 
 const Header = () => {
+  const history = useHistory();
   const dispatch = useDispatch();
 
   const userLogin = useSelector((state) => state.userLogin);
@@ -11,13 +13,14 @@ const Header = () => {
 
   const logoutHandler = () => {
     dispatch(logout());
+    history.push('/');
   };
   return (
     <header>
       <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>YYKids</Navbar.Brand>
+            <Navbar.Brand>YYkids</Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
