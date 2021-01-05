@@ -17,6 +17,7 @@ const SearchBox = ({ history }) => {
   return (
     <Form onSubmit={submitHandler} inline>
       <Form.Control
+        size='sm'
         type='text'
         name='q'
         value={keyword}

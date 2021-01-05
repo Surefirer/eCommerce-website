@@ -19,7 +19,7 @@ const Header = () => {
   };
   return (
     <header>
-      <Navbar bg='dark' variant='dark' expand='lg' collapseOnSelect>
+      <Navbar variant='dark' expand='lg' collapseOnSelect className='nav'>
         <Container>
           <LinkContainer to='/'>
             <Navbar.Brand>YYkids</Navbar.Brand>

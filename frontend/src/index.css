@@ -1,3 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:ital,wght@1,300&family=Gloria+Hallelujah&display=swap');
+
+body {
+  font-family: 'Averia Sans Libre', cursive;
+}
+.nav {
+  font-family: 'Gloria Hallelujah', cursive;
+  background-color: #ddbf86;
+}
+
 main {
   min-height: 80vh;
 }
@@ -22,4 +32,43 @@ h2 {
 
 .btn {
   border-radius: 20px;
+}
+
+/* carousel */
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  display: flex;
+}
+.carousel-caption {
+  position: absolute;
+  top: 0;
+}
+
+.carousel-caption h2 {
+  color: #fff;
+}
+
+.carousel img {
+  width: 400px;
+  padding: 30px;
+  margin: 40px;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.carousel a {
+  margin: 0 auto;
+}
+@media (max-width: 900px) {
+  .carousel-caption h2 {
+    font-size: 0.8rem;
+  }
+}
+
+/* nav bar font size*/
+
+.navbar .container .navbar-brand {
+  /* color: #373535 !important; */
+  font-size: 25px;
 }
