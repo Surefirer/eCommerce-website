@@ -103,16 +103,14 @@ const OrderScreen = ({ match, history }) => {
                 <strong>Email: </strong>{' '}
                 <a href={`mailto:${order.user.email}`}>{order.user.email}</a>
               </p>
-              <p>
+              {/* <p>
                 <strong>Address:</strong>
                 {order.shippingAddress.address},{order.shippingAddress.city},
                 {order.shippingAddress.postalCode},
                 {order.shippingAddress.country}
-              </p>
-              {order.isDelivered ? (
-                <Message variant='success'>
-                  Delivered on {order.deliveredAt}
-                </Message>
+              </p> */}
+              {order.isPaid ? (
+                <Message variant='success'>Delivered on {order.paidAt}</Message>
               ) : (
                 <Message variant='danger'>Not Delivered</Message>
               )}

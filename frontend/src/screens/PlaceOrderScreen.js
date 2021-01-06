@@ -13,15 +13,15 @@ const PlaceOrderScreen = ({ history }) => {
   const dispatch = useDispatch();
   const cart = useSelector((state) => state.cart);
 
-  if (!cart.shippingAddress.address) {
-    history.push('/shipping');
-  } else if (!cart.paymentMethod) {
-    history.push('/payment');
-  }
-
-  // if (!cart.paymentMethod) {
+  // if (!cart.shippingAddress.address) {
+  //   history.push('/shipping');
+  // } else if (!cart.paymentMethod) {
   //   history.push('/payment');
   // }
+
+  if (!cart.paymentMethod) {
+    history.push('/payment');
+  }
 
   // calculate prices
   const addDecimals = (num) => {
@@ -32,8 +32,10 @@ const PlaceOrderScreen = ({ history }) => {
     cart.cartItems.reduce((acc, item) => acc + item.price * item.qty, 0)
   );
 
-  cart.shippingPrice = addDecimals(cart.itemsPrice > 1000 ? 0 : 10);
-  cart.taxPrice = addDecimals(Number((0.13 * cart.itemsPrice).toFixed(2)));
+  // cart.shippingPrice = addDecimals(cart.itemsPrice > 1000 ? 0 : 0);
+  // cart.taxPrice = addDecimals(Number((0.13 * cart.itemsPrice).toFixed(2)));
+  cart.shippingPrice = 0;
+  cart.taxPrice = 0;
   cart.totalPrice = (
     Number(cart.itemsPrice) +
     Number(cart.shippingPrice) +
@@ -73,14 +75,14 @@ const PlaceOrderScreen = ({ history }) => {
       <Row>
         <Col md={8}>
           <ListGroup variant='flush'>
-            <ListGroup.Item>
+            {/* <ListGroup.Item>
               <h2>Shipping</h2>
               <p>
                 <strong>Address:</strong>
                 {cart.shippingAddress.address},{cart.shippingAddress.city},
                 {cart.shippingAddress.postalCode},{cart.shippingAddress.country}
               </p>
-            </ListGroup.Item>
+            </ListGroup.Item> */}
 
             <ListGroup.Item>
               <h2>Payment Method</h2>

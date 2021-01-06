@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Col, Card } from 'react-bootstrap';
 import Product from '../components/Product';
 import Message from '../components/Message';
 import Loader from '../components/Loader';
@@ -34,7 +34,7 @@ const HomeScreen = ({ match }) => {
           Go Back
         </Link>
       )}
-      <h1>Lastest Products</h1>
+      {keyword ? <h1>Search Result</h1> : <h1>Lastest Products</h1>}
       {loading ? (
         <Loader />
       ) : error ? (
@@ -54,6 +54,44 @@ const HomeScreen = ({ match }) => {
             keyword={keyword ? keyword : ''}
           />
         </>
+      )}
+
+      {!keyword && (
+        <div className='adCard-container'>
+          <Card className='my-3 p-2 adCard'>
+            <Card.Img src='' variant='top' />
+            <Card.Body>
+              <Card.Title>High Quality Image</Card.Title>
+              <Card.Text>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className='my-3 p-2 adCard'>
+            <Card.Img src='' variant='top' />
+            <Card.Body>
+              <Card.Title>Life time access</Card.Title>
+              <Card.Text>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+          <Card className='my-3 p-2 adCard'>
+            <Card.Img src='' variant='top' />
+            <Card.Body>
+              <Card.Title>Environmentally friendly</Card.Title>
+              <Card.Text>
+                Contrary to popular belief, Lorem Ipsum is not simply random
+                text. It has roots in a piece of classical Latin literature from
+                45 BC.
+              </Card.Text>
+            </Card.Body>
+          </Card>
+        </div>
       )}
     </>
   );
