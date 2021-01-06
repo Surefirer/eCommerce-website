@@ -22,7 +22,14 @@ const Header = () => {
       <Navbar variant='dark' expand='lg' collapseOnSelect className='nav'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>YYkids</Navbar.Brand>
+            <Navbar.Brand>
+              <span className='blue'>Y</span>
+              <span className='green'>Y</span>
+              <span className='red'>k</span>
+              <span className='orange'>i</span>
+              <span className='brown'>d</span>
+              <span className='orchild'>s</span>
+            </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>

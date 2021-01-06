@@ -121,7 +121,8 @@ label:focus,
 
 /* carousel */
 .carousel {
-  background-color: #9bb7d4;
+  /* background-color: #9bb7d4; */
+  background-color: #75b3db;
 }
 .carousel-item-next,
 .carousel-item-prev,
@@ -159,4 +160,30 @@ label:focus,
 .navbar .container .navbar-brand {
   /* color: #373535 !important; */
   font-size: 25px;
+}
+
+/* color span */
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.brown {
+  color: brown;
+}
+
+.orange {
+  color: orange;
+}
+
+.orchild {
+  color: orchid;
 }
