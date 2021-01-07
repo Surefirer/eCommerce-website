@@ -1,6 +1,6 @@
 const products = [
   {
-    name: 'Coloring Page Mega Pack (3500 pages)',
+    name: 'Coloring Page Mega Pack (3500 sheets)',
     image: '/images/coloring.jpg',
     image1: '/images/image1.jpg',
     description:

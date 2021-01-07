@@ -4,49 +4,6 @@ body {
   font-family: 'Averia Sans Libre', cursive;
 }
 
-.nav {
-  font-family: 'Gloria Hallelujah', cursive;
-  /* background-color: #ddbf86; */
-  background-color: #f5df4d;
-}
-
-#username {
-  color: black;
-}
-
-.footer {
-  background-color: #f2f2f2;
-}
-
-.footerWrapper {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-  margin: 30px auto;
-}
-
-.footerContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.aboutUs {
-  width: 200px;
-}
-
-.contact ul li {
-  list-style-type: none;
-}
-
-.contact ul {
-  padding: 0;
-}
-
-.paypal-logo img {
-  width: 150px;
-}
-
 main {
   min-height: 80vh;
 }
@@ -94,8 +51,61 @@ label:focus,
   border-radius: 10px;
 }
 
-/* ads card section */
+/* Nav bar */
+.nav {
+  font-family: 'Gloria Hallelujah', cursive;
+  /* background-color: #ddbf86; */
+  background-color: #f5df4d;
+}
 
+#username {
+  color: black;
+}
+
+.search-btn:hover {
+  color: white !important;
+  border-color: white;
+  transition-duration: 0.2s;
+  transition-timing-function: ease;
+  background: #f5e160;
+}
+
+/* footer */
+
+.footer {
+  background-color: #f2f2f2;
+}
+
+.footerWrapper {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+  margin: 30px auto;
+}
+
+.footerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.aboutUs {
+  width: 200px;
+}
+
+.contact ul li {
+  list-style-type: none;
+}
+
+.contact ul {
+  padding: 0;
+}
+
+.paypal-logo img {
+  width: 150px;
+}
+
+/* ads card section */
 .adCard-container {
   display: flex;
   justify-content: space-around;
@@ -104,11 +114,13 @@ label:focus,
 
 .adCard {
   width: 18rem;
-  /* background: #f5f5f5; */
-  background: #f9e104;
+  background: #f5f5f5;
   text-align: center;
   border-radius: 15px;
+  border: none;
 }
+
+/* responsive */
 
 @media (max-width: 992px) {
   .adCard-container {

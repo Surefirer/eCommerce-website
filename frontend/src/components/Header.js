@@ -31,7 +31,11 @@ const Header = () => {
               <span className='orchild'>s</span>
             </Navbar.Brand>
           </LinkContainer>
-          <Navbar.Toggle aria-controls='basic-navbar-nav' />
+          <Navbar.Toggle aria-controls='basic-navbar-nav'>
+            <span style={{ color: 'black' }}>
+              <i className='fas fa-bars fa-2x'></i>
+            </span>
+          </Navbar.Toggle>
           <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
             <Nav className='ml-auto'>

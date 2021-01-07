@@ -59,9 +59,11 @@ const HomeScreen = ({ match }) => {
       {!keyword && (
         <div className='adCard-container'>
           <Card className='my-3 p-2 adCard'>
-            <Card.Img src='' variant='top' />
+            <i className='fas fa-thumbs-up fa-3x mt-3'></i>
             <Card.Body>
-              <Card.Title>High Quality Image</Card.Title>
+              <Card.Title className='font-weight-bold'>
+                High Quality Image
+              </Card.Title>
               <Card.Text>
                 All digital materials are high definition ready to print. No
                 water marks.
@@ -69,9 +71,11 @@ const HomeScreen = ({ match }) => {
             </Card.Body>
           </Card>
           <Card className='my-3 p-2 adCard'>
-            <Card.Img src='' variant='top' />
+            <i className='fas fa-stream fa-3x mt-3'></i>
             <Card.Body>
-              <Card.Title>Life time access</Card.Title>
+              <Card.Title className='font-weight-bold'>
+                Life time access
+              </Card.Title>
               <Card.Text>
                 Purchase onec, you have access to these material forever and
                 different locations! Just login your account and download.
@@ -79,9 +83,11 @@ const HomeScreen = ({ match }) => {
             </Card.Body>
           </Card>
           <Card className='my-3 p-2 adCard'>
-            <Card.Img src='' variant='top' />
+            <i className='fas fa-dollar-sign fa-3x mt-3'></i>
             <Card.Body>
-              <Card.Title>More Value Less Cost</Card.Title>
+              <Card.Title className='font-weight-bold'>
+                More Value Less Cost
+              </Card.Title>
               <Card.Text>
                 Teach can be difficult especially when you need to search for
                 resource. We provide everything you need for your kids at a
