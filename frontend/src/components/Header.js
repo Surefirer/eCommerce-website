@@ -34,12 +34,13 @@ const Header = () => {
           <Navbar.Toggle aria-controls='basic-navbar-nav' />
           <Navbar.Collapse id='basic-navbar-nav'>
             <Route render={({ history }) => <SearchBox history={history} />} />
-            <Nav className='ml-auto h6'>
+            <Nav className='ml-auto'>
               <LinkContainer to='/cart'>
-                <Nav.Link>
+                <Nav.Link className='text-dark'>
                   <i className='fas fa-shopping-cart'></i> Cart
                 </Nav.Link>
               </LinkContainer>
+
               {userInfo ? (
                 <NavDropdown title={userInfo.name} id='username'>
                   <LinkContainer to='/profile'>
@@ -51,11 +52,12 @@ const Header = () => {
                 </NavDropdown>
               ) : (
                 <LinkContainer to='/login'>
-                  <Nav.Link>
-                    <i className='fas fa-user'></i> Sign In
+                  <Nav.Link className='text-dark'>
+                    <i className='fas fa-user '></i> Sign In
                   </Nav.Link>
                 </LinkContainer>
               )}
+
               {userInfo && userInfo.isAdmin && (
                 <NavDropdown title='Admin' id='adminmenu'>
                   <LinkContainer to='/admin/userlist'>

@@ -8,11 +8,16 @@ const Footer = () => {
         <div className='footerWrapper'>
           <div className='aboutUs'>
             <h3>About Us</h3>
-            <p>YYkids provide high quality digital printable kids actity pdf</p>
+            <p>
+              YYkids provides high quality digital printable kids learning
+              materials to make your life flow more efficient in a cost
+              effective way. Spend more time with your kids, and let us do the
+              search job.
+            </p>
           </div>
           <div className='contact'>
             <h3>Contact</h3>
-            <p>yykidsadmin@gmail.com</p>
+            <p>yykidssupport@gmail.com</p>
           </div>
           <div className='contact'>
             <h3>Support</h3>

@@ -63,9 +63,8 @@ const HomeScreen = ({ match }) => {
             <Card.Body>
               <Card.Title>High Quality Image</Card.Title>
               <Card.Text>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC.
+                All digital materials are high definition ready to print. No
+                water marks.
               </Card.Text>
             </Card.Body>
           </Card>
@@ -74,20 +73,19 @@ const HomeScreen = ({ match }) => {
             <Card.Body>
               <Card.Title>Life time access</Card.Title>
               <Card.Text>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC.
+                Purchase onec, you have access to these material forever and
+                different locations! Just login your account and download.
               </Card.Text>
             </Card.Body>
           </Card>
           <Card className='my-3 p-2 adCard'>
             <Card.Img src='' variant='top' />
             <Card.Body>
-              <Card.Title>Environmentally friendly</Card.Title>
+              <Card.Title>More Value Less Cost</Card.Title>
               <Card.Text>
-                Contrary to popular belief, Lorem Ipsum is not simply random
-                text. It has roots in a piece of classical Latin literature from
-                45 BC.
+                Teach can be difficult especially when you need to search for
+                resource. We provide everything you need for your kids at a
+                lower cost to save your time, and enjoy with your kids.
               </Card.Text>
             </Card.Body>
           </Card>

@@ -157,6 +157,14 @@ const ProductScreen = ({ history, match }) => {
             </Col>
           </Row>
 
+          <Row md={12} className='my-4'>
+            <Image
+              src='https://images.unsplash.com/photo-1608133854470-ff251d3666c7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixlib=rb-1.2.1&q=80&w=800'
+              alt={product.name}
+              fluid
+            />
+          </Row>
+
           <Row>
             <Col md={6}>
               <h2>Reviews</h2>

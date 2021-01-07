@@ -27,9 +27,9 @@ const SearchBox = ({ history }) => {
       ></Form.Control>
       <Button
         type='submit'
-        variant='outline-light'
+        variant='outline-dark'
         size='sm'
-        className='p-2 px-3'
+        className='p-2 px-3 text-dark'
       >
         Search
       </Button>

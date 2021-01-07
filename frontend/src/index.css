@@ -3,10 +3,15 @@
 body {
   font-family: 'Averia Sans Libre', cursive;
 }
+
 .nav {
   font-family: 'Gloria Hallelujah', cursive;
   /* background-color: #ddbf86; */
   background-color: #f5df4d;
+}
+
+#username {
+  color: black;
 }
 
 .footer {
