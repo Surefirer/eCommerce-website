@@ -63,6 +63,7 @@ const createProduct = asyncHandler(async (req, res) => {
     price: 0,
     user: req.user._id,
     image: './images/sample.jpg',
+    image1: '',
     brand: 'Sample brand',
     category: 'Sample category',
     countInStock: 0,
@@ -84,6 +85,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     price,
     description,
     image,
+    image1,
     brand,
     category,
     countInStock,
@@ -97,6 +99,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.price = price;
     product.description = description;
     product.image = image;
+    product.image1 = image1;
     product.brand = brand;
     product.category = category;
     product.countInStock = countInStock;

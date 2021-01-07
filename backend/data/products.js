@@ -2,6 +2,7 @@ const products = [
   {
     name: 'Coloring Page Mega Pack (3500 pages)',
     image: '/images/coloring.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include 3500 high quality printable sheets in pdf file, this is the ultimate coloring page pack for you kids!',
     brand: 'YYkids',
@@ -16,6 +17,7 @@ const products = [
   {
     name: 'Maze Mega Pack (2000+ sheets)',
     image: '/images/maze.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include over 2000 high quality printable maze sheets in pdf format, this is the ultiate maze pack for your kids！',
     brand: 'YYkids',
@@ -30,6 +32,7 @@ const products = [
   {
     name: 'Pencil Control (1200+ sheets)',
     image: '/images/pencil-control.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include over 2000 high quality printable pencil control sheets in pdf format, this is the ultiate pencil control pack for your kids！',
     brand: 'YYkids',
@@ -44,6 +47,7 @@ const products = [
   {
     name: 'Focus Training (916 sheets)',
     image: '/images/focus-training.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include over 2000 high quality printable focus training sheets in pdf format, this is the ultiate focus training pack for your kids！',
     brand: 'YYkids',
@@ -58,6 +62,7 @@ const products = [
   {
     name: 'Math Training Mega Pack (4.6G Data)',
     image: '/images/math-training.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include 4.6G data content for math training, this is the math training pack for your kids！',
     brand: 'YYkids',
@@ -72,6 +77,7 @@ const products = [
   {
     name: 'Logic Training Mega Pack (1725 Sheets)',
     image: '/images/logica-training.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include 1725 high quality printable logic training sheets in pdf format, this is the ultiate logic training pack for your kids!',
     brand: 'YYkids',
@@ -86,6 +92,7 @@ const products = [
   {
     name: 'Parent-child Art',
     image: '/images/parent-child-art.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include 1725 high quality printable logic training sheets in pdf format, this is the ultiate logic training pack for your kids!',
     brand: 'YYkids',
@@ -100,6 +107,7 @@ const products = [
   {
     name: 'Christmas Mega Pack',
     image: '/images/christmas.jpg',
+    image1: '/images/image1.jpg',
     description:
       'Include 1725 high quality printable logic training sheets in pdf format, this is the ultiate logic training pack for your kids!',
     brand: 'YYkids',

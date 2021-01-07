@@ -22,7 +22,6 @@ import ScrollToTop from './components/ScrollToTop';
 const App = () => {
   return (
     <Router>
-      <ScrollToTop />
       <Header />
       <main className='py-3'>
         <Container>
@@ -60,6 +59,7 @@ const App = () => {
         </Container>
       </main>
       <Footer />
+      <ScrollToTop />
     </Router>
   );
 };

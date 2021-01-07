@@ -15,6 +15,7 @@ const ProductEditScreen = ({ match, history }) => {
   const [name, setName] = useState('');
   const [price, setPrice] = useState(0);
   const [image, setImage] = useState('');
+  const [image1, setImage1] = useState('');
   const [brand, setBrand] = useState('');
   const [category, setCategory] = useState('');
   const [countInStock, setCountInStock] = useState(0);
@@ -45,6 +46,7 @@ const ProductEditScreen = ({ match, history }) => {
         setName(product.name);
         setPrice(product.price);
         setImage(product.image);
+        setImage1(product.image1);
         setBrand(product.brand);
         setCategory(product.category);
         setCountInStock(product.countInStock);
@@ -86,6 +88,7 @@ const ProductEditScreen = ({ match, history }) => {
         name,
         price,
         image,
+        image1,
         brand,
         category,
         description,
@@ -146,6 +149,16 @@ const ProductEditScreen = ({ match, history }) => {
                 onChange={uploadFileHandler}
               ></Form.File>
               {uploading && <Loader />}
+            </Form.Group>
+
+            <Form.Group controlId='image1'>
+              <Form.Label>Image1</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Enter image url'
+                value={image1}
+                onChange={(e) => setImage1(e.target.value)}
+              ></Form.Control>
             </Form.Group>
 
             <Form.Group controlId='brand'>

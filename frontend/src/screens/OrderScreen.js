@@ -76,7 +76,6 @@ const OrderScreen = ({ match, history }) => {
   }, [dispatch, order, orderId, successPay, successDeliver, history, userInfo]);
 
   const successPaymentHandler = (paymentResult) => {
-    console.log(paymentResult);
     dispatch(payOrder(orderId, paymentResult));
   };
 
@@ -95,7 +94,7 @@ const OrderScreen = ({ match, history }) => {
         <Col md={8}>
           <ListGroup variant='flush'>
             <ListGroup.Item>
-              <h2>Shipping</h2>
+              <h2>Status</h2>
               <p>
                 <strong>Name: </strong> {order.user.name}
               </p>
@@ -137,7 +136,13 @@ const OrderScreen = ({ match, history }) => {
                           </Link>
                         </Col>
                         <Col md={4}>
-                          <a href={item.downloadLink}>Download</a>
+                          <a
+                            href={item.downloadLink}
+                            target='_blank'
+                            rel='noreferrer'
+                          >
+                            Download
+                          </a>
                         </Col>
                       </Row>
                     </ListGroup.Item>

@@ -41,13 +41,15 @@ const ProductScreen = ({ history, match }) => {
 
   useEffect(() => {
     if (successProductReview) {
-      alert('Review Submitted!');
       setRating(0);
       setComment('');
+    }
+
+    if (!product._id || product._id !== match.params.id) {
+      dispatch(listProductDetails(match.params.id));
       dispatch({ type: PRODUCT_CREATE_REVIEW_RESET });
     }
-    dispatch(listProductDetails(match.params.id));
-  }, [dispatch, match, successProductReview]);
+  }, [dispatch, match, product, successProductReview]);
 
   const addToCartHandler = () => {
     history.push(`/cart/${match.params.id}?qty=${qty}`);
@@ -158,11 +160,7 @@ const ProductScreen = ({ history, match }) => {
           </Row>
 
           <Row md={12} className='my-4'>
-            <Image
-              src='https://images.unsplash.com/photo-1608133854470-ff251d3666c7?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=600&ixlib=rb-1.2.1&q=80&w=800'
-              alt={product.name}
-              fluid
-            />
+            <Image src={product.image1} alt={product.name} fluid />
           </Row>
 
           <Row>

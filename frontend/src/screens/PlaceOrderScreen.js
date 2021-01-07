@@ -71,7 +71,7 @@ const PlaceOrderScreen = ({ history }) => {
 
   return (
     <>
-      <CheckoutSteps step1 step2 step3 step4 />
+      <CheckoutSteps step1 step2 step3 />
       <Row>
         <Col md={8}>
           <ListGroup variant='flush'>
@@ -86,7 +86,7 @@ const PlaceOrderScreen = ({ history }) => {
 
             <ListGroup.Item>
               <h2>Payment Method</h2>
-              <strong>Medhod: {cart.paymentMethod}</strong>
+              <strong>Method: {cart.paymentMethod}</strong>
             </ListGroup.Item>
 
             <ListGroup.Item>
