@@ -118,6 +118,7 @@ label:focus,
   text-align: center;
   border-radius: 15px;
   border: none;
+  color: #555555;
 }
 
 /* responsive */

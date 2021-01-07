@@ -13,15 +13,10 @@ const PrivacySecurityScreen = () => {
       <h3>The Information We Collect:</h3>
       <p>
         This notice applies to all information collected or submitted on the
-        Olight website. On some pages, you can order products, make requests,
-        and register to receive materials. The types of personal information
-        collected at these pages are: Name, Address, Email address, Phone
-        number, Credit/Debit Card Information, etc. On some pages, you can
-        submit information about other people. For example, if you order a gift
-        online and want it sent directly to the recipient, you will need to
-        submit the information for the recipient. In this circumstance, the
-        types of personal information collected are: Name, Address, Phone
-        Number, etc.)
+        YYkids website. On some pages, you can order products, make requests,
+        and register account. The types of personal information collected at
+        these pages are: Name, Email address, Phone number, paypal Information,
+        etc.
       </p>
       <h3>The Way We Use Information:</h3>
       <p>
@@ -36,11 +31,9 @@ const PrivacySecurityScreen = () => {
         not shared with outside parties. We use the email address you provide
         when signing up for an account or completing an order to contact you
         regarding the status of the order. We do not share your email address
-        with third parties unless you specifically request that we do so. We use
-        your provided email address for our newsletters if you choose to sign up
-        for the newsletter. You can unsubscribe from the newsletter at any time
-        using the link at the bottom of every newsletter. We hate spam as much
-        as you do and quickly honor any “do not contact” requests.
+        with third parties unless you specifically request that we do so. We
+        hate spam as much as you do and quickly honor any “do not contact”
+        requests.
       </p>
       <h3>Our Commitment To Data Security:</h3>
       <p>
