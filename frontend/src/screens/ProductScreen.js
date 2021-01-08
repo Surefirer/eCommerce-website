@@ -93,10 +93,7 @@ const ProductScreen = ({ history, match }) => {
                       text={`$${product.numReviews} reviews`}
                     />
                   </ListGroup.Item>
-                </ListGroup>
-              </Card>
-              <Card>
-                <ListGroup variant='flush'>
+
                   <ListGroup.Item>
                     <Row>
                       <Col>Price:</Col>
