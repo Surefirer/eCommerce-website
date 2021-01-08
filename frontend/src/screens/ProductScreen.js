@@ -160,7 +160,9 @@ const ProductScreen = ({ history, match }) => {
           </Row>
 
           <Row md={12} className='my-4'>
-            <Image src={product.image1} alt={product.name} fluid />
+            <Col>
+              <Image src={product.image1} alt={product.name} fluid />
+            </Col>
           </Row>
 
           <Row>
