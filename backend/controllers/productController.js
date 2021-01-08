@@ -70,6 +70,7 @@ const createProduct = asyncHandler(async (req, res) => {
     numReviews: 0,
     description: 'Sample description',
     downloadLink: 'www.samplelink.com',
+    downloadKey: 'samplekey123',
   });
 
   const createdProduct = await product.save();
@@ -90,6 +91,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     category,
     countInStock,
     downloadLink,
+    downloadKey,
   } = req.body;
 
   const product = await Product.findById(req.params.id);
@@ -104,6 +106,7 @@ const updateProduct = asyncHandler(async (req, res) => {
     product.category = category;
     product.countInStock = countInStock;
     product.downloadLink = downloadLink;
+    product.downloadKey = downloadKey;
 
     const updatedProduct = await product.save();
     res.json(updatedProduct);

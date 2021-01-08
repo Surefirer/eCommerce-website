@@ -141,8 +141,11 @@ const OrderScreen = ({ match, history }) => {
                             target='_blank'
                             rel='noreferrer'
                           >
-                            Download
+                            <i className='fas fa-download fa-2x'></i>
                           </a>
+                        </Col>
+                        <Col>
+                          <p className='mt-3'>Key: {item.downloadKey}</p>
                         </Col>
                       </Row>
                     </ListGroup.Item>

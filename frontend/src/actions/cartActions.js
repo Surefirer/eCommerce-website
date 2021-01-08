@@ -20,6 +20,7 @@ export const addToCart = (id, qty) => async (dispatch, getState) => {
       countInStock: data.countInStock,
       qty,
       downloadLink: data.downloadLink,
+      downloadKey: data.downloadKey,
     },
   });
 

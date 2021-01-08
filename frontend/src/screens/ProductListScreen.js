@@ -101,6 +101,7 @@ const ProductListScreen = ({ history, match }) => {
                 <th>CATEGORY</th>
                 <th>BRAND</th>
                 <th>Download</th>
+                <th>Key</th>
                 <th></th>
               </tr>
             </thead>
@@ -115,6 +116,7 @@ const ProductListScreen = ({ history, match }) => {
                   <td>
                     <a href={product.downloadLink}>download</a>
                   </td>
+                  <td>{product.downloadKey}</td>
                   <td>
                     <LinkContainer to={`/admin/product/${product._id}/edit`}>
                       <Button variant='light' className='btn-sm'>

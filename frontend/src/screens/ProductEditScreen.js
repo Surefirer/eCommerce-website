@@ -21,6 +21,7 @@ const ProductEditScreen = ({ match, history }) => {
   const [countInStock, setCountInStock] = useState(0);
   const [description, setDescription] = useState('');
   const [downloadLink, setDownloadLink] = useState('');
+  const [downloadKey, setDownloadKey] = useState('');
   const [uploading, setUploading] = useState(false);
 
   const dispatch = useDispatch();
@@ -52,6 +53,7 @@ const ProductEditScreen = ({ match, history }) => {
         setCountInStock(product.countInStock);
         setDescription(product.description);
         setDownloadLink(product.downloadLink);
+        setDownloadKey(product.downloadKey);
       }
     }
   }, [dispatch, history, productId, product, successUpdate]);
@@ -94,6 +96,7 @@ const ProductEditScreen = ({ match, history }) => {
         description,
         countInStock,
         downloadLink,
+        downloadKey,
       })
     );
   };
@@ -208,6 +211,16 @@ const ProductEditScreen = ({ match, history }) => {
                 placeholder='Enter download link'
                 value={downloadLink}
                 onChange={(e) => setDownloadLink(e.target.value)}
+              ></Form.Control>
+            </Form.Group>
+
+            <Form.Group controlId='downloadKey'>
+              <Form.Label>Download Key</Form.Label>
+              <Form.Control
+                type='text'
+                placeholder='Enter Key'
+                value={downloadKey}
+                onChange={(e) => setDownloadKey(e.target.value)}
               ></Form.Control>
             </Form.Group>
 
