@@ -22,7 +22,7 @@ const Header = () => {
       <Navbar variant='dark' expand='lg' collapseOnSelect className='nav'>
         <Container>
           <LinkContainer to='/'>
-            <Navbar.Brand>
+            <Navbar.Brand className='logo-font'>
               <span className='blue'>Y</span>
               <span className='green'>Y</span>
               <span className='red'>k</span>

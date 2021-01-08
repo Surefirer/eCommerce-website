@@ -54,9 +54,12 @@ label:focus,
 
 /* Nav bar */
 .nav {
-  font-family: 'Gloria Hallelujah', cursive;
   /* background-color: #ddbf86; */
   background-color: #f5df4d;
+}
+
+.logo-font {
+  font-family: 'Gloria Hallelujah', cursive;
 }
 
 #username {
