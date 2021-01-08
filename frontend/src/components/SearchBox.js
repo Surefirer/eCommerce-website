@@ -25,14 +25,14 @@ const SearchBox = ({ history }) => {
         placeholder='Search Products...'
         className='mr-sm-2 ml-sm-5 form-control'
       ></Form.Control>
-      <Button
+      {/* <Button
         type='submit'
         variant='outline-dark'
         size='sm'
         className='p-2 px-3 text-dark search-btn'
       >
         Search
-      </Button>
+      </Button> */}
     </Form>
   );
 };
