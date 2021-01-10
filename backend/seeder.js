@@ -14,13 +14,14 @@ connectDB();
 
 const importData = async () => {
   try {
-    await Order.deleteMany();
+    // await Order.deleteMany();
     await Product.deleteMany();
-    await User.deleteMany();
+    // await User.deleteMany();
 
-    const createdUsers = await User.insertMany(users);
+    // const createdUsers = await User.insertMany(users);
 
-    const adminUser = createdUsers[0]._id;
+    // const adminUser = createdUsers[0]._id;
+    const adminUser = '5ff8d45a4a9d0d4adc6a90fc';
 
     const sampleProducts = products.map((product) => {
       return {
