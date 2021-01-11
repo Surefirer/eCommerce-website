@@ -1,3 +1,7 @@
+# Live Test URL: https://yykidsapp.herokuapp.com/
+
+## PayPal is using sandbox, please contact me for paypal fake account if you want to test it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
